@@ -13,12 +13,12 @@
 header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     height: 60px;
     background-color: var(--dark);
 }
 h1 {
-    display: flex;
+    /* display: flex; */
     background-color: var(--name-background);
     font-size: 32px;
     color: var(--dark);
@@ -30,20 +30,20 @@ h1 {
     margin-right: auto;
     border-radius: 0 15px 15px 0;
 }
-nav {
+nav .nav-links{
     display: flex;
     background-color: var(--dark);
     padding-top: 30px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
 }
 nav li a:hover {
     color: var(--name-background);
 }
 li {
-    display: inline;
+    /* display: inline; */
     margin-bottom: 20px;
     margin-right: 10px;
+    list-style: none;
 }
 a {
     padding: 10px;
@@ -52,7 +52,7 @@ a {
     font-weight: bold;
 }
 .hero-banner {
-    display: flex;
+    /* display: flex; */
     position: relative;
     height: 250px;
     width: 100%;
@@ -113,24 +113,60 @@ h3 {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
-    /* padding: 15px; */
     box-shadow: 5px 5px 3px var(--primary);
-    margin-left: 20px;
+    margin: 20px 20px;
     width: 350px;
     height: 300px;
     position: relative;
 }
-#large-card .card {
-    min-width: 737px;
-    border: 1px solid var(--primary)
-}
-#img-one {
+#large-card {
+    width: 90%;
+    min-width: 350px;
+    background-image: url('https://marvel-b1-cdn.bc0a.com/f00000000214316/image.dynamixse.com/crop/900x600/webp.q80.png-lossy-85/https://octanecdn.com/pikearmstrong/armstronggardencom_273578920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 1px;
     border-radius: 10px;
+    box-shadow: 5px 5px 3px var(--primary);
+    margin: 20px 20px;
+    height: 300px;
+    position: relative;
 }
-#img-rest {
-    width: 100%;
-    align-items: flex-end;
-    border-radius: 10px 10px 10px 10px;
+#large-card h4 {
+    color: var(--dark);
+    background-color: var(--primary);
+    border-radius: 0 7px 7px 0;
+    font-size: 20px;
+    width: 75%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+#proj2 {
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.PQ8ihGgcLf-W8zS4pYT94QHaFk&pid=Api&P=0&w=204&h=153");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#proj3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp7lIN4I-fBrPeX9Up_h-8f5wVpf_0XczPRA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#proj4 {
+    background-image: url("https://www.gardeningknowhow.com/wp-content/uploads/2010/08/hosta-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#proj5 {
+    background-image: url("https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/a5448b62d9af4e198a913c25547ea514");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card h4 {
     color: var(--dark);
@@ -145,6 +181,10 @@ h3 {
     top: 5px;
     left: 0;
 }
+.card:hover {
+    box-shadow: inset;
+}
+/* This is a placeholder until my portfolio has actual projects to describe; the descriptions of which will be contained in the .card p tag */
 /* .card p {
     text-align: right;
     position: absolute;
@@ -152,12 +192,15 @@ h3 {
     right: 15px;
     color: var(--dark);
 } */
-#large-card {
-    width: 70%;
-}
+
 .contact-links {
     background-color: white;
-    padding: 5px 10px;
+    padding: 15px 30px;
+    margin: 15px 20px;
+    justify-content: space-evenly;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
 }
 footer img {
     width: 100%;
@@ -171,9 +214,17 @@ footer {
     font-weight: bold;
 }
 @media screen and (max-width:768px) {
-    h1 {
+    header {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* z-index: 9; */
         flex-wrap: wrap;
-    }    
+        /* justify-content: normal; */
+        height: 60px;
+    }   
+    .flex-container {
+        flex-direction: column;
+    } 
 }
 @media screen and (max-width:576px) {
     h1 {
@@ -189,5 +240,8 @@ footer {
     }
     .pages-section p {
         justify-content: center;
+    }
+    h3 {
+        flex-direction: column;
     }
 }
