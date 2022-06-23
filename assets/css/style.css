@@ -181,8 +181,9 @@ h3 {
     top: 5px;
     left: 0;
 }
+#large-card:hover, 
 .card:hover {
-    box-shadow: inset;
+    box-shadow: inset 0px 0px 8px var(--primary), 0 0 25px var(--primary);
 }
 /* This is a placeholder until my portfolio has actual projects to describe; the descriptions of which will be contained in the .card p tag */
 /* .card p {
@@ -197,6 +198,7 @@ h3 {
     background-color: white;
     padding: 15px 30px;
     margin: 15px 20px;
+    display: inline-block;
     justify-content: space-evenly;
     font-size: 16px;
     font-weight: bold;
@@ -213,25 +215,25 @@ footer {
     font-size: 15px;
     font-weight: bold;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1000px) {
     header {
-        /* flex-wrap: wrap; */
         flex-direction: column;
-        /* z-index: 9; */
         flex-wrap: wrap;
-        /* justify-content: normal; */
         height: 60px;
     }   
+    .pages-section p {
+        font-size: 18px;
+        margin: 0px; 
+    }
     .flex-container {
         flex-direction: column;
     } 
 }
 @media screen and (max-width:576px) {
     h1 {
-        background-color: lightgray;
         flex-wrap: wrap;
     }
-    nav {
+    ul.nav-links{
         flex-direction: column;
     }
     h2 {
@@ -242,6 +244,12 @@ footer {
         justify-content: center;
     }
     h3 {
+        text-align: left;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .contact-links {
         flex-direction: column;
     }
 }

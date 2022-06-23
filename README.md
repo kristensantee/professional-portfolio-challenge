@@ -26,6 +26,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 The provided mock-up includes a header with nav links, a hero banner with caption/slogan, an About Me section, a Work section featuring tiled projects cards that glow on hover, and a Contact Me section. 
 # Run and Install
 The deployed Professional Portfolio Challenge can be accessed [here](https://kristensantee.github.io/professional-portfolio-challenge/). 
+A screenshot of the site is shown below:
+
+![](./assets/images/screenshot.png)
 # How to Use the Project
 The nav links in the header will direct the user to the various parts of the page that are identified by the links. The Resume link will redirect the user to my current resume which will need to be updated prior to job searching.
 
