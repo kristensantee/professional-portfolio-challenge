@@ -28,7 +28,7 @@ The provided mock-up includes a header with nav links, a hero banner with captio
 The deployed Professional Portfolio Challenge can be accessed [here](https://kristensantee.github.io/professional-portfolio-challenge/). 
 A screenshot of the site is shown below:
 
-![](./assets/images/screenshot.png)
+![](./assets/images/screenshot2.png)
 # How to Use the Project
 The nav links in the header will direct the user to the various parts of the page that are identified by the links. The Resume link will redirect the user to my current resume which will need to be updated prior to job searching.
 
